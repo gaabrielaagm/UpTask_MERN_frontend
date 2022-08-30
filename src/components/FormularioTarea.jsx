@@ -11,7 +11,7 @@ const FormularioTarea = () => {
   const [ id, setId ] = useState(tarea?._id ? tarea?._id : null)
   const [ nombre, setNombre ] = useState(tarea?.nombre ? tarea?.nombre : '')
   const [ descripcion, setDescripcion ] = useState(tarea?.descripcion ? tarea?.descripcion : '')
-  const [ fechaEntrega, setfechaEntrega ] = useState(tarea?.fechaEntrega ? tarea?.fechaEntrega.split('T')[0] : '2022-08-11')
+  const [ fechaEntrega, setfechaEntrega ] = useState(tarea?.fechaEntrega ? tarea?.fechaEntrega.split('T')[0] : '')
   const [ prioridad, setPrioridad ] = useState(tarea?.prioridad ? tarea?.prioridad : '')
   
   const params = useParams()
